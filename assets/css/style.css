@@ -1,9 +1,3 @@
-body {
-    background: url(../images/subtle_grunge_@2X.png);
-    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-
-}
-
 /* 
 Teal color (used for headings and backgrounds): #4aaaa5
 Regular font color (used for paragraphs and all text besides the headings): #777777
@@ -14,37 +8,194 @@ Main content background color: #ffffff
 Main content border color: #dddddd
 */
 
-.teal {
-    color: #4aaaa5;
-}
-.teal-bg {
-    background: #4aaaa5;
-}
-
-p, li {
+body {
+    background: url(../images/subtle_grunge_@2X.png);
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
-}
-.full-width {
-    width: 100%;
-    background: #ffffff;
-}
-.container {
-    width: 960px;
-    margin: 0 auto;
-}
-.header {
-    background: #ffffff;
-    border: 1px solid #cccccc;
 }
 
 /* For heading fonts use font-family: 'Georgia', Times, Times New Roman, serif;.
 For all other fonts use 'Arial', 'Helvetica Neue', Helvetica, sans-serif;. */
 
-.heading {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: Georgia, Times, "Times New Roman", serif;
 }
-.my-name-container {
-    padding: 20px;
+
+.float-left {
+    float: left;
+    margin: 0 25px 25px 0;
+}
+
+.teal {
+    color: #4aaaa5;
+}
+
+.teal-bg {
+    background: #4aaaa5;
+    color: #ffffff;
+}
+
+.main-header {
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 25px 0 0 0;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.my-name {
+    padding: 25px;
     display: inline-block;
     width: auto;
+}
+
+.my-name a, .my-name a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.my-name h1 {
+    font-size: 24px;
+}
+
+nav {
+    float: right;
+    margin-top: 30px;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li.divider {
+    margin-left: 10px;
+}
+
+nav a {
+    color: #777777;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:active {
+    color: #4aaaa5;
+}
+
+.divider {
+    padding: 0 10px;
+    color: #dddddd;
+}
+
+.main {
+    margin-top: 25px;
+    padding: 25px;
+    background: #ffffff;
+    box-sizing: border-box;
+    /* I think the example shows a border around the main content container */
+    border: 1px solid #dddddd;
+}
+
+.main h2 {
+    color: #4aaaa5;
+    font-size: 24px;
+    margin: .5em 0;
+    padding-bottom: 10px;
+}
+
+.hr {
+    border-bottom: 3px solid #cccccc;
+    height: 3px;
+    margin-bottom: 25px;
+}
+
+.main p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0 0 .75em 0;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 40px;
+    background: #666666;
+    text-align: center;
+    border-top: 8px solid #4aaaa5;
+}
+
+footer p {
+    margin-top: 25px;
+    font-size: .75em;
+    color: #cccccc;
+}
+
+.row {
+    width: 100%;
+    display: block;
+    height: 200px;
+    clear: both;
+    margin-bottom: 25px;
+}
+
+.row.last {
+    margin-bottom: 0;
+}
+
+.portfolio-item {
+    float: left;
+    height: 200px;
+    margin-right: 25px;
+}
+
+.portfolio-item.last {
+    margin-right: 0;
+}
+
+.portfolio-item-description {
+    background: #4aaaa5;
+    text-align: center;
+    padding: 15px;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    position: relative;
+    bottom: 60px;
+}
+
+.form-item {
+    display: block;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#name,
+#email,
+#message {
+    width: 100%;
+    padding: 10px;
+}
+
+button {
+    background: #4aaaa5;
+    padding: 10px 25px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+button:hover,
+button:active {
+    background: #357874;
 }
